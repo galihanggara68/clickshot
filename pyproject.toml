@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-clickshot = "clickshot.cli:cli"
+clickshot = "py_clickshot.cli:cli"
 
 [build-system]
 requires = ["flit_core<4"]
