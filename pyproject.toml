@@ -1,5 +1,5 @@
 [project]
-name = "clickshot"
+name = "py-clickshot"
 description = "Record your step with screenshot automatically, comes with click annotated on the image"
 version = "0.1.0"
 readme = "README.md"
