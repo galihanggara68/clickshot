@@ -2,8 +2,8 @@ import subprocess
 import os
 from PIL import Image
 
-from clickshot.backends.cursor_base import CursorProvider
-from clickshot.backends.screenshot_base import ScreenshotBackend
+from py_clickshot.backends.cursor_base import CursorProvider
+from py_clickshot.backends.screenshot_base import ScreenshotBackend
 
 def take_annotated_screenshot(screenshot: ScreenshotBackend,  cursor: CursorProvider, filepath, resize_percent=50, offset_x=1920):
     coords = cursor.get_position()

@@ -4,9 +4,9 @@ import datetime
 import select
 import evdev
 from evdev import InputDevice, categorize, ecodes
-from clickshot.input_listener import InputControl
-from clickshot.screenshot import take_annotated_screenshot
-from clickshot.html_writer import init_html, append_html, finalize_html
+from py_clickshot.input_listener import InputControl
+from py_clickshot.screenshot import take_annotated_screenshot
+from py_clickshot.html_writer import init_html, append_html, finalize_html
 
 def start_recording(output_dir, screenshot, cursor):
     output_dir = os.path.expanduser(output_dir)

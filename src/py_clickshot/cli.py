@@ -1,5 +1,5 @@
 import click
-from clickshot.recorder import start_recording
+from py_clickshot.recorder import start_recording
 
 
 @click.group()
@@ -14,11 +14,11 @@ def cli():
 @click.option('--display', default='eDP-1',help='Specific Display/Monitor to capture')
 def record(output_dir, screenshot, cursor, display):
     """Start recording mouse/touch clicks, 'q' to Quit recording and 'p' to Pause/Resume recording"""
-    from clickshot.backends.grim_backend import GrimScreenshot
-    from clickshot.backends.maim_backend import MaimScreenshot
-    from clickshot.backends.scrot_backend import ScrotScreenshot
-    from clickshot.backends.hyprctl_cursor import HyprctlCursor
-    from clickshot.backends.xdotool_cursor import XdotoolCursor
+    from py_clickshot.backends.grim_backend import GrimScreenshot
+    from py_clickshot.backends.maim_backend import MaimScreenshot
+    from py_clickshot.backends.scrot_backend import ScrotScreenshot
+    from py_clickshot.backends.hyprctl_cursor import HyprctlCursor
+    from py_clickshot.backends.xdotool_cursor import XdotoolCursor
     screenshot_backend = {
         "grim": GrimScreenshot(display),
         "maim": MaimScreenshot(),
