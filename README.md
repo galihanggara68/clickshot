@@ -2,6 +2,10 @@
 
 ClickShot is a command-line tool that listens for mouse or touchpad click events, takes annotated screenshots at the cursor position, and generates an editable HTML log of your steps.
 
+<img src="./docs/scr1.png" width="300" />
+<img src="./docs/scr2.png" width="300" />
+
+
 It supports:
 
 - 📷 Screenshot tools: `grim`, `maim`, `scrot`
@@ -24,7 +28,7 @@ It supports:
 ## 🛠️ Installation
 
 ```bash
-pip install clickshot
+pip install py-clickshot
 ````
 ---
 
